@@ -1,13 +1,16 @@
-package com.example.atividades;
+package com.example.atividades.atividade03;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import org.junit.jupiter.api.Test;
+
+import com.example.atividades.atividade03.FindMax;
+
 import java.util.Arrays;
 import java.util.List;
 
-public class TestAtividade03_FindMax {
-    private final Atividade03_FindMax atividade = new Atividade03_FindMax();
+public class TestFindMax {
+    private final FindMax atividade = new FindMax();
 
     @Test
     public void testFindMaxWithPositiveNumbers() {

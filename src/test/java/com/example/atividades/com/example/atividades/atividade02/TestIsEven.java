@@ -1,11 +1,13 @@
-package com.example.atividades;
+package com.example.atividades.atividade02;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import org.junit.jupiter.api.Test;
 
-public class TestAtividade02_IsEven {
-    private final Atividade02_IsEven atividade = new Atividade02_IsEven();
+import com.example.atividades.atividade02.IsEven;
+
+public class TestIsEven {
+    private final IsEven atividade = new IsEven();
 
     @Test
     public void testIsEvenWithEvenNumber() {

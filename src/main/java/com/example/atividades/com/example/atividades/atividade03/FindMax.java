@@ -1,9 +1,9 @@
-package com.example.atividades;
+package com.example.atividades.atividade03;
 
 import java.util.List;
 import java.util.Collections;
 
-public class Atividade03_FindMax {
+public class FindMax {
     public Integer findMax(List<Integer> numbers) {
         if (numbers == null || numbers.isEmpty()) {
             return null;

@@ -1,10 +1,12 @@
-package com.example.atividades;
+package com.example.atividades.atividade01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class TestAtividade01_Add {
-    private final Atividade01_Add atividade = new Atividade01_Add();
+import com.example.atividades.atividade01.Add;
+
+public class TestAdd {
+    private final Add atividade = new Add();
 
     @Test
     public void testAddPositiveNumbers() {

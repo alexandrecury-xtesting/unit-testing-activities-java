@@ -1,14 +1,14 @@
-package com.example.atividades;
+package com.example.atividades.atividade05;
 
 import java.io.IOException;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class Atividade05_HttpClient {
+public class HttpClient {
     private OkHttpClient client;
 
-    public Atividade05_HttpClient(OkHttpClient okHttpClient) {
+    public HttpClient(OkHttpClient okHttpClient) {
 		 client = okHttpClient;
 	}
 

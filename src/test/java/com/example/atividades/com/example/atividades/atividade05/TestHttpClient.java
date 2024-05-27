@@ -1,13 +1,16 @@
-package com.example.atividades;
+package com.example.atividades.atividade05;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+
+import com.example.atividades.atividade05.HttpClient;
+
 import okhttp3.*;
 
 import java.io.IOException;
 
-public class TestAtividade05_HttpClient {
+public class TestHttpClient {
     @Test
     public void testGetDataFromApiSuccess() throws IOException {
         OkHttpClient mockClient = mock(OkHttpClient.class);
@@ -23,7 +26,7 @@ public class TestAtividade05_HttpClient {
         when(mockClient.newCall(any(Request.class))).thenReturn(mockCall);
         when(mockCall.execute()).thenReturn(mockResponse);
 
-        Atividade05_HttpClient httpClient = new Atividade05_HttpClient(mockClient);
+        HttpClient httpClient = new HttpClient(mockClient);
         String url = "http://fakeapi.com/data";
 
         String data = httpClient.getDataFromApi(url);

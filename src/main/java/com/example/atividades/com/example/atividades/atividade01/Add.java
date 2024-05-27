@@ -1,6 +1,6 @@
-package com.example.atividades;
+package com.example.atividades.atividade01;
 
-public class Atividade01_Add {
+public class Add {
     public int add(int a, int b) {
         return a + b;
     }
