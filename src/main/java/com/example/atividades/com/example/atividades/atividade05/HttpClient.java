@@ -5,17 +5,14 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class HttpClient {
-    private OkHttpClient client;
+public class HttpClient implements IHttpClient {
+    private IHttpClient _client;
 
-    public HttpClient(OkHttpClient okHttpClient) {
-		 client = okHttpClient;
+    public HttpClient(IHttpClient httpClient) {
+    	_client = httpClient;
 	}
 
 	public String getDataFromApi(String url) throws IOException {
-        Request request = new Request.Builder().url(url).build();
-        try (Response response = client.newCall(request).execute()) {
-            return response.body().string();
-        }
+		return _client.getDataFromApi(url);
     }
 }
