@@ -11,6 +11,11 @@ package com.example.atividades.atividade15;
 * https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
 */
 
+/**
+ * Link for the code example
+ * https://docs.aws.amazon.com/rekognition/latest/dg/text-detecting-text-procedure.html
+*/
+
 //snippet-start:[rekognition.java2.detect_text.import]
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.core.SdkBytes;
